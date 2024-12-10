@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.6 on win32)" generated="2024-12-10T11:55:45.726709" rpa="false" schemaversion="5">
+<suite id="s1" name="Ex" source="K:\robot\ex.robot">
+<test id="s1-t1" name="TC-001 Verify that when input correct username and password then user can login" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-10T11:55:46.140601" level="INFO">Opening browser 'chrome' to base url 'file:///K:/Doppio%20tech/ep01/ep01_small_excercise.html'.</msg>
+<arg>file:///K:/Doppio%20tech/ep01/ep01_small_excercise.html</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-10T11:55:46.140601" elapsed="1.795554"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-10T11:55:47.937153" level="INFO">Typing text 'Hitler' into text field 'id=username-box'.</msg>
+<arg>id=username-box</arg>
+<arg>Hitler</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-10T11:55:47.937153" elapsed="0.091316"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-10T11:55:48.029466" level="INFO">Typing text 'hailhitler' into text field 'xpath=//div[@v='password']//input'.</msg>
+<arg>xpath=//div[@v='password']//input</arg>
+<arg>hailhitler</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-10T11:55:48.029466" elapsed="0.070811"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-10T11:55:48.100277" level="INFO">Typing text 'nazi123' into text field 'xpath=//input[@doppio='nickname']'.</msg>
+<arg>xpath=//input[@doppio='nickname']</arg>
+<arg>nazi123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-10T11:55:48.100277" elapsed="0.086767"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-12-10T11:55:48.188041" level="INFO">Selecting options from selection list 'xpath=//select' by label Doppio.</msg>
+<arg>xpath=//select</arg>
+<arg>Doppio</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-12-10T11:55:48.188041" elapsed="0.056358"/>
+</kw>
+<kw name="Debug" owner="DebugLibrary">
+<kw name="Input Textid=username-box">
+<msg time="2024-12-10T11:56:45.047589" level="FAIL">No keyword with name 'Input Textid=username-box' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>Hitler</arg>
+<status status="FAIL" start="2024-12-10T11:56:45.047589" elapsed="0.000000">No keyword with name 'Input Textid=username-box' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Input Textid=username-box">
+<msg time="2024-12-10T11:56:56.942317" level="FAIL">No keyword with name 'Input Textid=username-box' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>Hitler</arg>
+<status status="FAIL" start="2024-12-10T11:56:56.942317" elapsed="0.000000">No keyword with name 'Input Textid=username-box' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Open Browserfile:///K:/Doppio%20tech/ep01/ep01_small_excercise.html">
+<msg time="2024-12-10T11:57:03.678483" level="FAIL">No keyword with name 'Open Browserfile:///K:/Doppio%20tech/ep01/ep01_small_excercise.html' found.</msg>
+<status status="FAIL" start="2024-12-10T11:57:03.678483" elapsed="0.000000">No keyword with name 'Open Browserfile:///K:/Doppio%20tech/ep01/ep01_small_excercise.html' found.</status>
+</kw>
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" start="2024-12-10T11:55:48.245396" elapsed="93.468805"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-10T11:57:21.714201" level="INFO">Clicking element 'id=op1'.</msg>
+<arg>id=op1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-10T11:57:21.714201" elapsed="0.055360"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-10T11:57:21.769561" level="INFO">Clicking element 'id=use-me'.</msg>
+<arg>id=use-me</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-10T11:57:21.769561" elapsed="0.044879"/>
+</kw>
+<status status="PASS" start="2024-12-10T11:55:46.139604" elapsed="95.675833"/>
+</test>
+<status status="PASS" start="2024-12-10T11:55:45.728703" elapsed="96.086734"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ex">Ex</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
